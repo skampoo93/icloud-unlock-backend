@@ -10,7 +10,7 @@ class RegisterView(generics.CreateAPIView):
     """Inscription d'un nouvel utilisateur (client)."""
     queryset = User.objects.all()
     serializer_class = RegisterSerializer
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAdminUser]
 
 
 class MeView(APIView):
