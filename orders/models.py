@@ -6,6 +6,7 @@ class Order(models.Model):
     class DeviceType(models.TextChoices):
         IPHONE = "iphone", "Vérification iPhone"
         MACBOOK = "macbook", "Vérification MacBook"
+        IPAD = "ipad", "Vérification iPad"
 
     class Status(models.TextChoices):
         PENDING = "pending", "En attente"
